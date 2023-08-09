@@ -1,6 +1,5 @@
-function Home(){
+export default ()=>{
   return (
     <div>首页</div>
   )
 }
-export default Home

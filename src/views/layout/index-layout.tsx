@@ -11,6 +11,7 @@ import SiderInner from "./sider/index-sider"
 // const HeaderInnner=lazy(()=>import("./header/index-header"));
 // const SiderInner=lazy(()=>import("./sider/index-sider"));
 
+
 export default () => {
     const { Header, Sider, Content } = Layout;
     return (
@@ -24,7 +25,6 @@ export default () => {
             <HeaderInnner></HeaderInnner>
           </Header>
           <Content>
-            Content
             <Outlet/>
           </Content>
         </Layout>
