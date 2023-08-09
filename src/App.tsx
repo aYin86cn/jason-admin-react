@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import {HashRouter,Routes,Route,Link,Navigate} from 'react-router-dom'
+// import { useState } from 'react'
+import {HashRouter} from 'react-router-dom' //,Routes,Route,Link,Navigate
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 // import Login from "./views/login/index-login"
@@ -12,7 +12,7 @@ import GetRouter from "./router";
 import './App.less'
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
   return (
     <HashRouter>

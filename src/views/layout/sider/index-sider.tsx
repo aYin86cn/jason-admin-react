@@ -1,11 +1,11 @@
 // import { useState } from 'react'
-import {Link} from 'react-router-dom'
-import "./index-sider.less"
+// import {Link} from 'react-router-dom'
+import styles from "./index-sider.module.less"
 import {routers} from "../../../router"
 import {useState} from "react";
 
 import { Nav } from '@douyinfe/semi-ui';
-import { IconUser, IconStar, IconSetting } from '@douyinfe/semi-icons';
+// import { IconUser, IconStar, IconSetting } from '@douyinfe/semi-icons';
 
 
 function Sider() {
@@ -15,6 +15,7 @@ function Sider() {
 
   return (
     <Nav
+      className={styles.nav}
       bodyStyle={{ height: 320 }}
       items={[
           { itemKey: 'user', text: '用户管理', icon: "fa fa-file" },

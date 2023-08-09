@@ -7,7 +7,7 @@ function Header() {
 
   return (
     <div className="header-inner">
-      <Link to="/layout">login-user</Link>
+      <Link to="/layout/home">login-user</Link>
       <Link to="/layout/user">login-user</Link>
     </div>
   )

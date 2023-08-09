@@ -3,7 +3,19 @@ import react from '@vitejs/plugin-react-swc'
 import path from "path"
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  resolve: {
+    alias:{
+      "@":path.resolve(__dirname,"src"),
+      "static": path.resolve(__dirname, "static"),
+      "assets": path.resolve(__dirname, "src/assets"),
+      "mixins": path.resolve(__dirname, "src/mixins"),
+      "comps": path.resolve(__dirname, "src/components"),
+      "views": path.resolve(__dirname, "src/views"),
+      "plugins": path.resolve(__dirname, "src/plugins"),
+      "utils": path.resolve(__dirname, "src/utils"),
+      "api": path.resolve(__dirname, "src/api"),
+    },
+  },
   css: {
     preprocessorOptions: {
       less: {
@@ -16,4 +28,5 @@ export default defineConfig({
       }
     }
   },
+  plugins: [react()],
 })
