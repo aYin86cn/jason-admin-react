@@ -18,5 +18,7 @@ It has a lot of my personal features. This repository is completely free, so ple
 ## 学习日志
 
 
-20230809
-习惯用vue了，react写着真费劲，长期习惯了solo开发，没怎么用过TS，现在学React的同时用TS写代码，非常痛苦。用TS写完这个工程，就会把TS雪藏了，除非团队协作必须上TS，否则solo开发绝对不会用TS，完全就是给自己上枷锁。今天到此为止，明天要移除semi-ui改用antd。
+- 20230809
+  - 习惯用vue了，react写着真费劲，长期习惯了solo开发，没怎么用过TS，现在学React的同时用TS写代码，非常痛苦。
+  - 用TS写完这个工程，就会把TS雪藏了，除非团队协作必须上TS，否则solo开发绝对不会用TS，完全就是给自己上枷锁。
+  - 今天到此为止，明天要移除semi-ui改用antd。
