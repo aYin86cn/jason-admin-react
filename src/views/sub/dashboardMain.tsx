@@ -1,5 +1,5 @@
 export default ()=>{
   return (
-    <div>首页</div>
+    <div>dashboardMain</div>
   )
 }

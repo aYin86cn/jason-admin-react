@@ -1,8 +1,14 @@
 export default [
-  {id:1,icon:'fal fa-house',label:'home',name:'工作台'},
-  {id:2,icon:'fal fa-memo-pad',label:'memo',name:'备忘录'},
-  {id:3,icon:'fal fa-code',label:'developing',name:'开发中'},
-  {id:90,icon:'fal fa-user-cowboy',label:'ayin',name:'aYin’s',children:[
-    { id:98,label:'license',name:'许可证系统Old'},
+  {id:1,label:'dashboardMain',name:'工作台',icon:"i carbon:airplay-filled"},
+  {id:2,label:'memo',name:'备忘录',icon:"i carbon:airplay-filled"},
+  {id:3,label:'developing',name:'开发中',icon:"i carbon:airplay-filled"},
+  {id:4,label:"dashboard",name:"工作台",icon:"i carbon:airplay-filled",children:[
+    {id:41,label:"dashboardA",name:"dashboardA"},
+    {id:42,label:"dashboardB",name:"dashboardB"},
   ]},
+  {id:5,label:"user",name:"用户",icon:"i carbon:user-avatar-filled",children:[
+    {id:51,label:"info",name:"info"},
+    {id:52,label:"password",name:"password"},
+  ]},
+  
 ]

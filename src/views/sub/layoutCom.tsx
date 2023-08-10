@@ -5,7 +5,7 @@ import {Outlet} from "react-router-dom"
 
 export default () => {
   return (
-    <div className="layoutCommon">
+    <div className="layout-common">
       123
       <Outlet/>
     </div>
