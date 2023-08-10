@@ -24,8 +24,9 @@ It has a lot of my personal features. This repository is completely free, so ple
   - 今天到此为止，明天要移除semi-ui改用antd。
 
 - 20230810
-  - 替换semi-ui未antd
+  - 替换semi-ui为antd
   - 集成mock，为动态路由做准备
   - 完成简易登录页面
   - 完成路由守卫
   - 完成axios
+  - 心得：用习惯了vue2-3+elementUI，使用react+atd的时候感觉很多东西都比较繁琐。vue yyds! 尤其vue3的写法，和原生差不多，模板语法写起来比jsx、tsx要爽很多。
