@@ -30,3 +30,4 @@ It has a lot of my personal features. This repository is completely free, so ple
   - 完成路由守卫
   - 完成axios
   - 心得：用习惯了vue2-3+elementUI，使用react+atd的时候感觉很多东西都比较繁琐。vue yyds! 尤其vue3的写法，和原生差不多，模板语法写起来比jsx、tsx要爽很多。
+  - 晚上8:10分折腾了几个小时的动态路由终于写完了，自己想出来的一个方案，其实是根据之前vue的动态路由思路实现的。结果还可以。
