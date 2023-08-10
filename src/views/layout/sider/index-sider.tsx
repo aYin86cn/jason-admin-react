@@ -1,78 +1,109 @@
 // import { useState } from 'react'
 // import {Link} from 'react-router-dom'
+
 import styles from "./index-sider.module.less"
 import {routers} from "../../../router"
+// console.log("routers",routers);
+
 // import {useState} from "react";
 
-import { Nav  } from '@douyinfe/semi-ui';
-// import { IconUser, IconStar, IconSetting } from '@douyinfe/semi-icons';
+import type { MenuProps } from 'antd';
+import { Menu } from 'antd';
+
+type MenuItem = Required<MenuProps>['items'][number];
+
+function getItem(
+  label: React.ReactNode,
+  key: React.Key,
+  icon?: React.ReactNode,
+  children?: MenuItem[],
+  type?: 'group',
+): MenuItem {
+  return {
+    key,
+    icon,
+    children,
+    label,
+    type,
+  } as MenuItem;
+}
 
 const iconDom=(iconStr:string): JSX.Element =>(
   <i className={iconStr}></i>
 )
 
-interface OutputItem {
-  itemKey: string;
-  text: string;
-  icon?: JSX.Element;
-  items?: OutputItem[];
-  // parent?: string;
-}
+const navItems: MenuItem[] = [
+  // getItem('Option 1', '1', iconDom("i carbon:accessibility-alt")),
+  // getItem('Option 2', '2', iconDom("i carbon:accessibility-alt")),
+  // getItem('Option 3', '3', iconDom("i carbon:accessibility-alt")),
 
-const navClick = (item: OutputItem) => {
-  console.log(item);
-}
-const navSelect = (data:any) => {
-  console.log("navSelect",data);
-}
+  // getItem('Navigation One', 'sub1', iconDom("i carbon:accessibility-alt"), [
+  //   getItem('Option 5', '5'),
+  //   getItem('Option 6', '6'),
+  //   getItem('Option 7', '7'),
+  //   getItem('Option 8', '8'),
+  // ]),
+
+  // getItem('Navigation Two', 'sub2', iconDom("i carbon:accessibility-alt"), [
+  //   getItem('Option 9', '9'),
+  //   getItem('Option 10', '10'),
+
+  //   getItem('Submenu', 'sub3', null, [getItem('Option 11', '11'), getItem('Option 12', '12')]),
+  // ]),
+];
+
+
+
+
+
+
+// const navClick = (item: OutputItem) => {
+//   console.log(item);
+// }
+// const navSelect = (data:any) => {
+//   console.log("navSelect",data);
+// }
 
 
 
 export default ()=>{
-  // const [router] = useState(routers)
   console.log("routers",routers);
-  
- 
-
-  
-
-  const outputArray: OutputItem[] = [];
-
   routers.forEach((item) => {
     if (item.path === "/layout" && item.children) {
-      item.children.forEach((child) => {
-        const newItem: OutputItem = { 
-          itemKey: child.path, 
-          text: child.label,
-          icon: child.icon !== undefined ? iconDom(child.icon) : undefined,
-          items:[] as OutputItem[]
-        };
       
+      item.children.forEach((child) => {
+        const items:MenuItem[]=[]
         if (child.children) {
           child.children.forEach((sub) => {
-            newItem.items?.push({ 
-              text: sub.label, 
-              itemKey: sub.path ,
-              // parent:child.path 
-            }); // 添加子项对象
+            items.push( getItem( sub.path, sub.label, ) ); // 添加子项对象
           });
         }
-        outputArray.push(newItem);
+        navItems.push(
+          getItem(
+            child.path, 
+            child.label,
+            child.icon !== undefined ? iconDom(child.icon) : undefined,
+            items
+          )
+        );
+        console.log("item1",item);
+        
       });
     }
   });
-
-
-  console.log("outputArray",outputArray);
+  
+  console.log("MenuItem",navItems);
   return (
-    <Nav
-      className={styles.nav}
-      bodyStyle={{ height: 320 }}
-      items={outputArray}
-      onSelect={navSelect}
-      onClick={data => navClick(data as OutputItem)}
-    />
-    
-  )
-}
+    <div >
+      <Menu
+        defaultSelectedKeys={['1']}
+        defaultOpenKeys={['sub1']}
+        mode="inline"
+        theme="dark"
+        items={navItems}
+      />
+    </div>
+  );
+};
+  
 

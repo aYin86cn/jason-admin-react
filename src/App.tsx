@@ -7,6 +7,8 @@ import {HashRouter} from 'react-router-dom' //,Routes,Route,Link,Navigate
 // import Home from "./views/home/index-home"
 // import User from "./views/user/index-user"
 
+import AuthRouter from "@/components/authRouter"
+
 import GetRouter from "./router";
 
 import './App.less'
@@ -16,7 +18,9 @@ function App() {
 
   return (
     <HashRouter>
-      <GetRouter/>
+      <AuthRouter>
+        <GetRouter/>
+      </AuthRouter>
       {/* <Link to="/login/user">login-user</Link> */}
       {/* <Routes>
         <Route path="/" element={<Navigate to="/layout"/>}/>
