@@ -39,4 +39,5 @@ It has a lot of my personal features. This repository is completely free, so ple
   - 学习和配置了redux的使用，太繁琐了，怀念vuex的便利，还有TS....习惯solo了，使用TS浑身不舒服，就和套了一层枷锁一样。
   - 导航配置完毕，包括导航的展开和激活状态
   - 备注一下后续要看的几个状态管理的库，1.zustand 2.jotai 3.mobx 4.recoil 5.dva
+  - 界面比较丑陋，我UI设计入行的，这方面最拿手，也因此UI界面对于学习来说不重要，凑合看即可。
   - 明天继续！
