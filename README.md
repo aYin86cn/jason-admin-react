@@ -38,4 +38,5 @@ It has a lot of my personal features. This repository is completely free, so ple
   - 动态路由有一个问题，就是进入登录的时候，未获取到mock的导航数据，router已经初始化，所以目前的状况就是首次进来后，导航和路由都未初始化，需要刷新才能让router.tsx获取到导航数据并初始化。后续学习高阶组件后，再回过头处理这个问题。
   - 学习和配置了redux的使用，太繁琐了，怀念vuex的便利，还有TS....习惯solo了，使用TS浑身不舒服，就和套了一层枷锁一样。
   - 导航配置完毕，包括导航的展开和激活状态
+  - 备注一下后续要看的几个状态管理的库，1.zustand 2.jotai 3.mobx 4.recoil 5.dva
   - 明天继续！
