@@ -19,7 +19,7 @@ const element: { [key: string]: JSX.Element } = {
   dashboardB: <DashboardB/>,
   info: <Info/>,
   password: <Password/>,
-  dashboardMain: <DashboardMain/>,
+  dashboard: <DashboardMain/>,
   memo: <Memo/>,
   developing: <Developing/>,
   layout:<LayoutCom/>

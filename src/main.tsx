@@ -10,8 +10,15 @@ import "@/utils/utils.js"
 
 // import {BrowserRouter} from "react-router-dom"
 
+// 状态管理
+import {Provider} from "react-redux"
+import store from "./store/store"
+
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>,
+  </Provider>
+  // <React.StrictMode>
+  // </React.StrictMode>,
 )

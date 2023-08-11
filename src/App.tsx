@@ -9,7 +9,7 @@ import {HashRouter} from 'react-router-dom' //,Routes,Route,Link,Navigate
 
 import AuthRouter from "@/components/authRouter"
 
-import GetRouter from "./router";
+import {GetRouters} from "./router";
 
 import './App.less'
 
@@ -19,7 +19,7 @@ function App() {
   return (
     <HashRouter>
       <AuthRouter>
-        <GetRouter/>
+        <GetRouters/>
       </AuthRouter>
       {/* <Link to="/login/user">login-user</Link> */}
       {/* <Routes>

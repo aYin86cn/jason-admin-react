@@ -1,15 +1,13 @@
 import {httpNavMenu} from  "@/api/api"
 import { useNavigate,Outlet } from 'react-router-dom';
-import {useState} from "react";
-import { UserOutlined,LockOutlined,EyeInvisibleOutlined, EyeTwoTone } from '@ant-design/icons';
+import { UserOutlined,LockOutlined } from '@ant-design/icons';
 import { Button, Form, Input } from 'antd';
 
-import "./login.less"
+import "./index-login.less"
 
 
 export default ()=>{
   const navigate = useNavigate();
-
   type FieldType = {
     username?: string;
     password?: string;
@@ -21,7 +19,7 @@ export default ()=>{
       if(res.data.length>0){
         sessionStorage.setItem("navMenu",JSON.stringify(res.data));
         sessionStorage.setItem("userName",values.username);
-        navigate('/layout');
+        navigate('/dashboard');
       }else{
         console.error("Can't get NavMenu !");
       }

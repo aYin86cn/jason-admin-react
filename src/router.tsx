@@ -45,7 +45,7 @@ interface RouterItem {
 
 export const routers: RouterItem[]=[
   {path:"/",element:<Navigate to="/login"/>},
-  {path:"/layout",name:"base", element:<Layout/>,
+  {path:"/",name:"base", element:<Layout/>,
     children:[
       // {path:"home",label:"home",icon:"i carbon:airplay-filled",element:lazyLoad(<LayoutCommon/>),children:[
       //   {path:"dashboardA",label:"dashboardA",element:lazyLoad(<HomeDBA/>)},
@@ -79,22 +79,10 @@ interface StoreRouter {
 const storedRoutesJSON = sessionStorage.getItem('navMenu');
 const storedRoutes: StoreRouter[] = storedRoutesJSON ? JSON.parse(storedRoutesJSON) : [];
 
-// 根据 label 获取对应的组件元素
-// const processedRouter: RouterItem[] = storedRoutes.map((route) => {
-//   const { label } = route;
-//   let regroup={
-//     ...route,
-//     path:label,
-//     name:label,
-//     element: subComponent[label],
-//   };
-//   console.log("regroup",regroup,subComponent[label]);
-  
-//   return regroup;
-// });
+let flatRouter:RouterItem[]=[];
 
-function processNestedRoutes(routes: StoreRouter[]): RouterItem[] {
-  return routes.map((route) => {
+function processNestedRoutes(routes: StoreRouter[]){
+  routes.map((route) => {
     const { label, children } = route;
     let regroup: RouterItem = {
       ...route,
@@ -103,25 +91,39 @@ function processNestedRoutes(routes: StoreRouter[]): RouterItem[] {
       element: children?subComponent['layout']:subComponent[label],
     };
     if (children) {
-      regroup.children = processNestedRoutes(children);
+      processNestedRoutes(children);
     }
-    return regroup;
+    flatRouter.push(regroup);
   });
 }
 
-const processedRouter: RouterItem[] = processNestedRoutes(storedRoutes);
+// const processedRouter: RouterItem[] = processNestedRoutes(storedRoutes);
 
 
 
-const GetRouters=()=>{
+export const GetRouters=()=>{
+  flatRouter=[]
+  processNestedRoutes(storedRoutes)
+  console.log("flatRouter",flatRouter);
+  
   routers.forEach((item) =>{
-    if(item.path == "/layout"){
-      item.children=processedRouter;
+    if(item.name == "base"){
+      item.children=flatRouter;
     }
   })
   console.log("routers!!!",routers);
-  
   const routes=useRoutes(routers)
   return routes
 }
-export default GetRouters;
+
+
+// export const Router= useRoutes(routers);
+
+// export const processRouter=()=>{
+//   routers.forEach((item) =>{
+//     if(item.path == "/layout"){
+//       item.children=processedRouter;
+//     }
+//   })
+  
+// }
