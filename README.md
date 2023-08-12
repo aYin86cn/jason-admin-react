@@ -49,3 +49,4 @@ It has a lot of my personal features. This repository is completely free, so ple
   - 登录新增了验证码功能，数据请求自mockjs
   - 深入学习redux，更加坚定要放弃redux，太繁琐了。
   - 根据其他视频教程做了一些案例。
+  - 有一些TS类型错误，不知道如何解决。后续再说。
