@@ -10,4 +10,9 @@ export default [
     {id:51,label:"info",name:"资料"},
     {id:52,label:"password",name:"密码"},
   ]},
+  {id:6,label:"typeScript",name:"TS二刷",icon:"i carbon:user-avatar-filled",children:[
+    {id:61,label:"ts01",name:"TS范例1"},
+    {id:62,label:"ts02",name:"TS范例2"},
+    {id:62,label:"ts03",name:"TS范例3"},
+  ]},
 ]

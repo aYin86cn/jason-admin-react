@@ -7,6 +7,10 @@ import Developing from "./developing"
 import Memo from "./memo"
 import LayoutCom from "./layoutCom"
 
+//typescript learn
+import Ts01 from "./typeScript/ts01"
+import Ts02 from "./typeScript/ts02"
+import Ts03 from "./typeScript/ts03"
 // import {lazy,Suspense} from "react"
 // const lazyLoad=(comp:JSX.Element)=>(
 //   <Suspense fallback={<div>Loading...</div>}>
@@ -22,7 +26,10 @@ const element: { [key: string]: JSX.Element } = {
   dashboard: <DashboardMain/>,
   memo: <Memo/>,
   developing: <Developing/>,
-  layout:<LayoutCom/>
+  layout:<LayoutCom/>,
+  ts01:<Ts01/>,
+  ts02:<Ts02/>,
+  ts03:<Ts03/>
 };
 
 export default element

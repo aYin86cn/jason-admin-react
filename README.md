@@ -50,3 +50,12 @@ It has a lot of my personal features. This repository is completely free, so ple
   - 深入学习redux，更加坚定要放弃redux，太繁琐了。
   - 根据其他视频教程做了一些案例。
   - 有一些TS类型错误，不知道如何解决。后续再说。
+
+- 20230813
+  - 根据网上的视频，对比了vue中提供的一些语法糖和功能，用react如何使用
+  - 相关的案例，放到了sub目录中的这些ts文件中。
+  - 还是很不错的一个课程，作者叫“最爱白菜”
+
+- 20230814
+  - 开始二刷TS语法，之前系统的学过一次TS语法，是为了用assemblyScript语言来写webassembly模块。但是写了一些工具后，发现这个语言完成度非常差，所以就放弃了。转而学习rust来写webassembly组件。所以TS从那之后就搁置了。大概是5月份左右。
+  - 现在二刷巩固一下TS的语法，顺便再次巩固js和ts中类的概念以及构造函数等。
