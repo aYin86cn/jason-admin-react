@@ -1,0 +1,15 @@
+.snake-wrap{.absoluteCenter; box-sizing: border-box; width: 400px; height:470px; .bgc(@aqr6); .bdr(10px); .bd(@bk,2px);
+  .stage{width: 364px; height:364px; .poa; .bgc(@aqr4); top:20px; left:50%; .fixc("x"); .bdr(10px); .bd(@aqr7,2px);
+    .snake{
+      .snake-head{.poa; bottom:0; left:0; width: 10px; height: 10px; .bd(@aqr4); .bgc(@aq);}
+      .snake-body{.poa; bottom:0; left:0; width: 10px;height: 10px; .bd(@aqr4); .bgc(@bk); }
+    }
+  }
+  .food{.bgc(@rel5); width: 10px;height: 10px; .bd(@aqr4); .poa; bottom:100px; left:50%;}
+  .score{.poa; bottom:20px; height: 50px; width: 100%; //.bd;
+    .msg{.poa;top:15px; font-weight: bold;
+      &.msg-left{left:20px; }
+      &.msg-right{right:20px; }
+    }
+  }
+}

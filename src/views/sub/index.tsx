@@ -11,6 +11,8 @@ import LayoutCom from "./layoutCom"
 import Ts01 from "./typeScript/ts01"
 import Ts02 from "./typeScript/ts02"
 import Ts03 from "./typeScript/ts03"
+
+import Snake from "./snake"
 // import {lazy,Suspense} from "react"
 // const lazyLoad=(comp:JSX.Element)=>(
 //   <Suspense fallback={<div>Loading...</div>}>
@@ -29,7 +31,8 @@ const element: { [key: string]: JSX.Element } = {
   layout:<LayoutCom/>,
   ts01:<Ts01/>,
   ts02:<Ts02/>,
-  ts03:<Ts03/>
+  ts03:<Ts03/>,
+  snake:<Snake/>
 };
 
 export default element

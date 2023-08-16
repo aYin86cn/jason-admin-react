@@ -59,3 +59,10 @@ It has a lot of my personal features. This repository is completely free, so ple
 - 20230814
   - 开始二刷TS语法，之前系统的学过一次TS语法，是为了用assemblyScript语言来写webassembly模块。但是写了一些工具后，发现这个语言完成度非常差，所以就放弃了。转而学习rust来写webassembly组件。所以TS从那之后就搁置了。大概是5月份左右。
   - 现在二刷巩固一下TS的语法，顺便再次巩固js和ts中类的概念以及构造函数等。
+
+- 20230815
+  - 跟着教程，练习TS语法
+
+- 20230816
+  - 网上看了看贪吃蛇的逻辑，用React+TS实现了一下，主要是为了锻炼react中的父子组件之间的传参和函数调用。
+  - 明天再完善，如蛇头碰撞自己身体等，再添加暂停继续重来等功能，以及虚拟按键。

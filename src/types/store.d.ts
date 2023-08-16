@@ -5,10 +5,41 @@ type RootState=ReturnType<typeof import("@/store").getState>
 
 interface Window{
   __REDUX_DEVTOOLS_EXTENSION__:function;
+  $ti:function;
 }
 
 interface StoreNum{
   state:Object;
   action:{};
   actionNames:[];
+}
+
+
+interface SnakeState {
+  food: {
+    left: number;
+    top: number;
+  };
+  point: {
+    score: number;
+    level: number;
+  };
+  snake: {
+    left: number;
+    top: number;
+    direction: string;
+    live: boolean;
+    body: SnakeBody[];
+  };
+}
+
+interface SnakeBody {
+  left: number;
+  top: number;
+}
+
+interface SnakeProps {
+  commonData: SnakeState;
+  setCommonData?: Dispatch<SetStateAction<SnakeState>>;
+  parentFunc?:function;
 }

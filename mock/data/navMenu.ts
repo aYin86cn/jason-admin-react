@@ -15,4 +15,5 @@ export default [
     {id:62,label:"ts02",name:"TS范例2"},
     {id:62,label:"ts03",name:"TS范例3"},
   ]},
+  {id:7,label:"snake",name:"贪吃蛇",icon:"i carbon:user-avatar-filled"}
 ]
