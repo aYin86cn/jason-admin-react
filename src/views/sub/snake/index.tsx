@@ -15,7 +15,7 @@ const snakeIndex: React.FC = () => {
     },
     point:{
       score:0,
-      level:8
+      level:0
     },
     snake:{
       left:0,
