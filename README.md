@@ -45,7 +45,7 @@ It has a lot of my personal features. This repository is completely free, so ple
 
 - 20230812
   - 今天重新封装了axios，重写了api等接口ts
-  - 新增了全局的ytpes interface文件
+  - 新增了全局的types interface文件
   - 登录新增了验证码功能，数据请求自mockjs
   - 深入学习redux，更加坚定要放弃redux，太繁琐了。
   - 根据其他视频教程做了一些案例。
