@@ -13,6 +13,17 @@ import Ts02 from "./typeScript/ts02"
 import Ts03 from "./typeScript/ts03"
 
 import Snake from "./snake"
+
+//react advance
+import AdvComponent from "./adavcance/advComponent"
+import UseCallbackDM from "./adavcance/useCallback"
+import UseContextDM from "./adavcance/useContext"
+import UseLayoutEffectDM from "./adavcance/useLayoutEffect"
+import UseMemoDM from "./adavcance/useMemo"
+import UseReducerDM from "./adavcance/useReducer"
+import UseVModelDM from "./adavcance/useVModel"
+
+
 // import {lazy,Suspense} from "react"
 // const lazyLoad=(comp:JSX.Element)=>(
 //   <Suspense fallback={<div>Loading...</div>}>
@@ -32,7 +43,14 @@ const element: { [key: string]: JSX.Element } = {
   ts01:<Ts01/>,
   ts02:<Ts02/>,
   ts03:<Ts03/>,
-  snake:<Snake/>
+  snake:<Snake/>,
+  advComponent:<AdvComponent/>,
+  useCallbackDM:<UseCallbackDM/>,
+  useContextDM:<UseContextDM/>,
+  useLayoutEffectDM:<UseLayoutEffectDM/>,
+  useMemoDM:<UseMemoDM/>,
+  useReducerDM:<UseReducerDM/>,
+  useVModelDM:<UseVModelDM/>,
 };
 
 export default element

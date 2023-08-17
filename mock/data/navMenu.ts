@@ -15,5 +15,14 @@ export default [
     {id:62,label:"ts02",name:"TS范例2"},
     {id:62,label:"ts03",name:"TS范例3"},
   ]},
+  {id:8,label:"reactAdv",name:"React高阶知识点",icon:"i carbon:user-avatar-filled",children:[
+    {id:81,label:"useContextDM",name:"useContext"},
+    {id:82,label:"useReducerDM",name:"useReducer"},
+    {id:83,label:"useCallbackDM",name:"useCallback"},
+    {id:84,label:"useVModelDM",name:"useVModel"},
+    {id:85,label:"useMemoDM",name:"useMemo"},
+    {id:86,label:"useLayoutEffectDM",name:"useLayoutEffect"},
+    {id:86,label:"advComponent",name:"高阶组件"},
+  ]},
   {id:7,label:"snake",name:"贪吃蛇",icon:"i carbon:user-avatar-filled"}
 ]

@@ -75,3 +75,8 @@ It has a lot of my personal features. This repository is completely free, so ple
     - 如果蛇非live状态，无法通过按键激活，必须reset重新玩
   - 这个react的练手工程暂时搁置，今天看更多的react案例，确保没有遗漏重要的知识点后于今天下午或者明天开始写techui-react-lite。
 
+- 20230817 晚19:17
+  - 今天三刷了TS的一些基础课程
+  - 开始学习React的高阶hook，之前只用到了useState，useEffect
+  - 今天学习了useContext的使用方式，明天继续学习useReducer，useMemo，useCallback，useLayoutEffect，useVModel 
+  - 再追加一个高阶组件的使用方法
