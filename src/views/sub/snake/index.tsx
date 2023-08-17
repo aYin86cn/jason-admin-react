@@ -18,7 +18,7 @@ const snakeIndex: React.FC = () => {
       level:0
     },
     snake:{
-      left:0,
+      left:10,
       top:0,
       direction:"right",
       live:true,

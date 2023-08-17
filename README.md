@@ -66,3 +66,12 @@ It has a lot of my personal features. This repository is completely free, so ple
 - 20230816
   - 网上看了看贪吃蛇的逻辑，用React+TS实现了一下，主要是为了锻炼react中的父子组件之间的传参和函数调用。
   - 明天再完善，如蛇头碰撞自己身体等，再添加暂停继续重来等功能，以及虚拟按键。
+
+- 20230817 早8:30
+  - 贪吃蛇完工，早上完成了如下功能
+    - 禁止蛇头朝反方向掉头
+    - 监测身体碰撞
+    - 添加rest功能
+    - 如果蛇非live状态，无法通过按键激活，必须reset重新玩
+  - 这个react的练手工程暂时搁置，今天看更多的react案例，确保没有遗漏重要的知识点后于今天下午或者明天开始写techui-react-lite。
+

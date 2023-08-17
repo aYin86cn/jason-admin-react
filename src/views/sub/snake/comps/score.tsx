@@ -33,6 +33,7 @@ const Score: React.FC<SnakeProps> = ({  commonData, setCommonData, parentFunc })
   return (
     <div className="score">
       <div className="msg msg-left">SCORE:{commonData.point.score} <button onClick={addScore}>+</button></div>
+      <div className="msg msg-center">Space to Restart</div>
       <div className="msg msg-right"><button onClick={addLevel}>+</button> LEVEL:{commonData.point.level}</div>
     </div>
   )
