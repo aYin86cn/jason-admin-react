@@ -16,8 +16,10 @@ export default [
     {id:62,label:"ts03",name:"TS范例3"},
   ]},
   {id:8,label:"reactAdv",name:"React高阶知识点",icon:"i carbon:user-avatar-filled",children:[
-    {id:81,label:"useContextDM",name:"useContext"},
+    {id:81,label:"useContextDM",name:"useContextBase"},
+    {id:81,label:"useContextAuth",name:"useContextAuth"},
     {id:82,label:"useReducerDM",name:"useReducer"},
+    {id:82,label:"useReducerSC",name:"useReducerCart"},
     {id:83,label:"useCallbackDM",name:"useCallback"},
     {id:84,label:"useVModelDM",name:"useVModel"},
     {id:85,label:"useMemoDM",name:"useMemo"},

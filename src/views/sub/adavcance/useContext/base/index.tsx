@@ -1,4 +1,5 @@
-import {useState,createContext,useContext} from "react"
+import {useState,createContext} from "react"
+import Child from "./child"
 
 interface CTX {
   userName: string;
@@ -10,26 +11,7 @@ const initCtxVal: CTX = {
   setUserName: () => {},
 };
 
-const DemoContext = createContext<CTX>(initCtxVal);
-
-
-const Child=()=>{
-  return (
-    <div>
-      <h2>子组件</h2>
-      <GrandChild/>
-    </div>
-  )
-}
-const GrandChild=()=>{
-  const {setUserName}=useContext(DemoContext);
-  return (
-    <div>
-      <h3>孙组件</h3>
-      <button onClick={()=>{setUserName("Jason")}}>修改用户名</button>
-    </div>
-  )
-}
+export const DemoContext = createContext<CTX>(initCtxVal);
 
 export default ()=>{
   const [userName,setUserName]=useState("ayin");

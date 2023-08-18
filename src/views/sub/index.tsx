@@ -17,10 +17,12 @@ import Snake from "./snake"
 //react advance
 import AdvComponent from "./adavcance/advComponent"
 import UseCallbackDM from "./adavcance/useCallback"
-import UseContextDM from "./adavcance/useContext"
+import UseContextDM from "./adavcance/useContext/base"
+import UseContextAuth from "./adavcance/useContext/auth"
 import UseLayoutEffectDM from "./adavcance/useLayoutEffect"
 import UseMemoDM from "./adavcance/useMemo"
-import UseReducerDM from "./adavcance/useReducer"
+import UseReducerDM from "./adavcance/useReducer/base"
+import UseReducerSC from "./adavcance/useReducer/shoppingCart"
 import UseVModelDM from "./adavcance/useVModel"
 
 
@@ -47,9 +49,11 @@ const element: { [key: string]: JSX.Element } = {
   advComponent:<AdvComponent/>,
   useCallbackDM:<UseCallbackDM/>,
   useContextDM:<UseContextDM/>,
+  useContextAuth:<UseContextAuth/>,
   useLayoutEffectDM:<UseLayoutEffectDM/>,
   useMemoDM:<UseMemoDM/>,
   useReducerDM:<UseReducerDM/>,
+  useReducerSC:<UseReducerSC/>,
   useVModelDM:<UseVModelDM/>,
 };
 
