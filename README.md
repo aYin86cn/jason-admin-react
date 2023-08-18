@@ -78,10 +78,20 @@ It has a lot of my personal features. This repository is completely free, so ple
 - 20230817 晚19:17
   - 今天三刷了TS的一些基础课程
   - 开始学习React的高阶hook，之前只用到了useState，useEffect
-  - 今天学习了useContext的使用方式，明天继续学习useReducer，useMemo，useCallback，useLayoutEffect，useVModel 
+  - 今天学习了useContext的使用方式，明天继续学习useReducer，useMemo，useCallback，useLayoutEffect，useVModel，useRef
   - 再追加一个高阶组件的使用方法
 
 
 - 20230810
   - 今天深入的学习了useContext和useReducer，其中useReducer的使用场景还是有点迷糊，感觉useState完全可以取代usereducer，不明白其使用的意义。
-  - 明天继续学习其他的一些Hook
+  - 明天继续学习其他的一些Hook，目前收集到的react的hook列表
+    - useState
+    - useEffect
+    - useContext
+    - useReducer
+    - useCallback
+    - useMemo
+    - useRef
+    - useLayoutEffect
+    - useImperativeHandle
+    - useDebugValue
