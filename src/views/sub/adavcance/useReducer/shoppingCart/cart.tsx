@@ -1,5 +1,5 @@
 import {useReducer} from "react"
-import cartRDC from "./cartRDC"
+import cartRDC,{fakeData} from "./cartRDC"
 
 interface Cart{
   id:number;
@@ -8,13 +8,13 @@ interface Cart{
   price:number;
 }
 
-const fakeData={
-  products:[
-    {id:1,name:"Glasses",num:1,price:200},
-    {id:2,name:"Battary",num:1,price:54},
-  ],
-  total:296,
-}
+// const fakeData={
+//   products:[
+//     {id:1,name:"Glasses",num:1,price:200},
+//     {id:2,name:"Battary",num:1,price:54},
+//   ],
+//   total:296,
+// }
 
 
 export default ()=>{

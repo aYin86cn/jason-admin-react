@@ -1,3 +1,11 @@
+export const fakeData={
+  products:[
+    {id:1,name:"Glasses",num:1,price:200},
+    {id:2,name:"Battary",num:1,price:54},
+  ],
+  total:296,
+}
+
 interface StateProd{
   products:Cart[]
 }

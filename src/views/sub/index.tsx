@@ -15,7 +15,7 @@ import Ts03 from "./typeScript/ts03"
 import Snake from "./snake"
 
 //react advance
-import AdvComponent from "./adavcance/advComponent"
+// import AdvComponent from "./adavcance/advComponent"
 import UseCallbackDM from "./adavcance/useCallback"
 import UseContextDM from "./adavcance/useContext/base"
 import UseContextAuth from "./adavcance/useContext/auth"
@@ -23,7 +23,8 @@ import UseLayoutEffectDM from "./adavcance/useLayoutEffect"
 import UseMemoDM from "./adavcance/useMemo"
 import UseReducerDM from "./adavcance/useReducer/base"
 import UseReducerSC from "./adavcance/useReducer/shoppingCart"
-import UseVModelDM from "./adavcance/useVModel"
+import UseRefDM from "./adavcance/useRef"
+import HigherOrderComp from "./adavcance/higherOrderComp"
 
 
 // import {lazy,Suspense} from "react"
@@ -46,7 +47,7 @@ const element: { [key: string]: JSX.Element } = {
   ts02:<Ts02/>,
   ts03:<Ts03/>,
   snake:<Snake/>,
-  advComponent:<AdvComponent/>,
+  // advComponent:<AdvComponent/>,
   useCallbackDM:<UseCallbackDM/>,
   useContextDM:<UseContextDM/>,
   useContextAuth:<UseContextAuth/>,
@@ -54,7 +55,8 @@ const element: { [key: string]: JSX.Element } = {
   useMemoDM:<UseMemoDM/>,
   useReducerDM:<UseReducerDM/>,
   useReducerSC:<UseReducerSC/>,
-  useVModelDM:<UseVModelDM/>,
+  useRefDM:<UseRefDM/>,
+  higherOrderComp:<HigherOrderComp/>,
 };
 
 export default element

@@ -21,6 +21,7 @@ export default ()=>{
         <p>{userName}</p>
         <hr />
         <Child/>
+        <p>使用useContext的时候，为了防止不必要的性能开支，可以结合useMemo来做优化</p>
       </div>
     </DemoContext.Provider>
   )

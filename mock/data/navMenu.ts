@@ -21,10 +21,11 @@ export default [
     {id:82,label:"useReducerDM",name:"useReducer"},
     {id:82,label:"useReducerSC",name:"useReducerCart"},
     {id:83,label:"useCallbackDM",name:"useCallback"},
-    {id:84,label:"useVModelDM",name:"useVModel"},
-    {id:85,label:"useMemoDM",name:"useMemo"},
-    {id:86,label:"useLayoutEffectDM",name:"useLayoutEffect"},
-    {id:86,label:"advComponent",name:"高阶组件"},
+    {id:84,label:"useRefDM",name:"useRef"},
+    {id:86,label:"useMemoDM",name:"useMemo"},
+    {id:87,label:"useLayoutEffectDM",name:"useLayoutEffect"},
+    // {id:85,label:"forwardRefDM",name:"forwardRef"},
+    {id:88,label:"higherOrderComp",name:"HOC高阶组件"},
   ]},
   {id:7,label:"snake",name:"贪吃蛇",icon:"i carbon:user-avatar-filled"}
 ]

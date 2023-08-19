@@ -67,18 +67,18 @@ It has a lot of my personal features. This repository is completely free, so ple
   - 网上看了看贪吃蛇的逻辑，用React+TS实现了一下，主要是为了锻炼react中的父子组件之间的传参和函数调用。
   - 明天再完善，如蛇头碰撞自己身体等，再添加暂停继续重来等功能，以及虚拟按键。
 
-- 20230817 早8:30
+- 20230817 
+  - 早8:30
   - 贪吃蛇完工，早上完成了如下功能
     - 禁止蛇头朝反方向掉头
     - 监测身体碰撞
     - 添加rest功能
     - 如果蛇非live状态，无法通过按键激活，必须reset重新玩
   - 这个react的练手工程暂时搁置，今天看更多的react案例，确保没有遗漏重要的知识点后于今天下午或者明天开始写techui-react-lite。
-
-- 20230817 晚19:17
+  - 晚19:17
   - 今天三刷了TS的一些基础课程
   - 开始学习React的高阶hook，之前只用到了useState，useEffect
-  - 今天学习了useContext的使用方式，明天继续学习useReducer，useMemo，useCallback，useLayoutEffect，useVModel，useRef
+  - 今天学习了useContext的使用方式，明天继续学习useReducer，useMemo，useCallback，useLayoutEffect，useRef
   - 再追加一个高阶组件的使用方法
 
 
@@ -95,3 +95,13 @@ It has a lot of my personal features. This repository is completely free, so ple
     - useLayoutEffect
     - useImperativeHandle
     - useDebugValue
+
+- 20230819
+  - 继续巩固一下useReducer是使用场景，
+  - 我之前想useContext也能取代useReducer，但后来想想这个Context字面意思是上下文，父子孙这种情况用比较合适。也不一定用状态管理取代useReducer，因为可能同一类型的页面的逻辑并不适合放到全局的状态里面。
+  - 从官方案例中了解到use-immer这个库，可以取代useReducer，能让不可变内容变成可变内容，从而直接修改值，而不用[...task,{id:action.id,text:action.text}]这样去修改，mark一下后续考虑使用 npm install immer use-immer
+  - 今天学习了memo, useMemo，useCallback，useRef，forwadRef，useLayoutEffect
+  - 简单了解了一下useImperativeHandle，或许还有其他的hook，暂时关于hook的学习就到这里。
+  - 另外看了看HOC高阶组件，但是发现都是class的写法，查询react官网，发现已经没有HOC了，估计和class组件一样被放弃了，所以这块学习就不继续了。
+  - 简单看了看zustand这个状态管理，打算抛弃redux使用zustand。
+  - 基本上今天之后，react的学习可以说就告一段落了，接下来可能开始写techui-react-lite
