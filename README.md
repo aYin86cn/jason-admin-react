@@ -104,6 +104,11 @@
   - 简单看了看zustand这个状态管理，打算抛弃redux使用zustand。
   - 基本上今天之后，react的学习可以说就告一段落了，接下来可能开始写techui-react-lite
 
+- 20230820
+  - react基本都学完了，今天学了一下useimmer，useImmerReducer
+  - 深入学习了一下zustand的进阶用法以及结合immer来使用zustand
+  - 感觉zustand可以取代useContext和useReducer，不过在组件封装的时候还是得使用这两个。 
+  
 
 ## 结语
 今天是20230819，学习react历时大概10天（此前断断续续看了1-2天的react的基础），因为是TS几乎没用过，所以可以说在边学习react的同时也在熟悉TS的使用过程。

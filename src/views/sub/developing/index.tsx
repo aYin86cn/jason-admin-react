@@ -1,11 +1,14 @@
 import {useState,useEffect, FormEvent} from 'react'
+import store from "@/store/immerStore"
 
 export default ()=>{
+  const {num,array,object,addSnake,increase,remove,addArry,summary}=store();
+
+  
   const message="ABCDEFG"
   const say=(str:string,e?:Event)=>{
     alert(str);
     console.log("e",e);
-    
   }
   const obj={
     onClick:()=>say("testObj"),
@@ -25,6 +28,21 @@ export default ()=>{
   },[state.count])
   return (
     <div>developing
+      <hr />
+      <div>
+        <p>来自于zustand immer的数据</p>
+        <p>{num}</p>
+        <button onClick={increase}>按钮1</button>
+        <button onClick={remove}>按钮2</button>
+        <p>数组</p>
+        <p>{array}</p>
+        <button onClick={addArry}>按钮</button>
+        <p>对象</p>
+        <p>{JSON.stringify(object)}</p>
+        <button onClick={addSnake}>按钮</button>
+        <button onClick={summary}>{summary()}</button>
+      </div>
+      <hr />
       <div>{1+1}</div>
       <div>{'a'+'b'}</div>
       <div>{true?'true':'false'}</div>

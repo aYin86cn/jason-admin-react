@@ -22,9 +22,10 @@ import UseContextAuth from "./adavcance/useContext/auth"
 import UseLayoutEffectDM from "./adavcance/useLayoutEffect"
 import UseMemoDM from "./adavcance/useMemo"
 import UseReducerDM from "./adavcance/useReducer/base"
+import UseReducerImmer from "./adavcance/useReducer/immer"
 import UseReducerSC from "./adavcance/useReducer/shoppingCart"
 import UseRefDM from "./adavcance/useRef"
-import HigherOrderComp from "./adavcance/higherOrderComp"
+import UseImmerDM from "./adavcance/useImmer"
 
 
 // import {lazy,Suspense} from "react"
@@ -54,9 +55,10 @@ const element: { [key: string]: JSX.Element } = {
   useLayoutEffectDM:<UseLayoutEffectDM/>,
   useMemoDM:<UseMemoDM/>,
   useReducerDM:<UseReducerDM/>,
+  useReducerImmer:<UseReducerImmer/>,
   useReducerSC:<UseReducerSC/>,
   useRefDM:<UseRefDM/>,
-  higherOrderComp:<HigherOrderComp/>,
+  useImmerDM:<UseImmerDM/>,
 };
 
 export default element

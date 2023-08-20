@@ -1,3 +1,6 @@
+import store from "@/store/comStore"
+
+
 const DemoTest=({isShow}:{isShow?:boolean})=>{
   if(!isShow){
     return null
@@ -9,6 +12,7 @@ const DemoTest=({isShow}:{isShow?:boolean})=>{
 const DomLi=({item}:{item:{name:string},index:number})=><li >{item.name}</li>
 
 export default ()=>{
+  const {num,array,increase,remove,addArry}=store();
   const songs=[
     {id:1,name:"song1"},
     {id:2,name:"song2"},
@@ -22,6 +26,18 @@ export default ()=>{
   }
   return (
     <div>memo
+      <p>zustand</p>
+      <div>
+        <p>来自于zustand的数据</p>
+        <p>{num}</p>
+        <button onClick={increase}>按钮1</button>
+        <button onClick={remove}>按钮2</button>
+        <p>数组</p>
+        <p>{array}</p>
+        <button onClick={addArry}>按钮</button>
+      </div>
+      <hr />
+
       {msg}
       {/* 插入原始HTML */}
       <div dangerouslySetInnerHTML={{__html:msg}}></div>
